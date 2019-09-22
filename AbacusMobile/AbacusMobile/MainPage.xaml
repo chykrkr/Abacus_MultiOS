@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:AbacusMobile;assembly=AbacusMobile" 
+             mc:Ignorable="d"
+             x:Class="AbacusMobile.MainPage">
+
+    <StackLayout Spacing="0" SizeChanged="StackLayout_SizeChanged">
+        <!-- Place new controls here -->
+        <!--
+        <local:Beed x:Name="beed" HeightRequest="100" WidthRequest="100"></local:Beed>
+        <local:BeedColumn WidthRequest="100"></local:BeedColumn>
+        -->
+        <ScrollView x:Name="abacusView" Orientation="Both">
+            <local:AbacusSet x:Name="abacusSet"></local:AbacusSet>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
